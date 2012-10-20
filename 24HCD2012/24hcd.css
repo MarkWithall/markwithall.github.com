@@ -5,3 +5,6 @@ body {
 p {
     line-height: 170%;
 }
+img {
+    max-width: 480px;
+}
