@@ -1,0 +1,27 @@
+#all {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Medula One', serif;
+    font-size: 50px;
+    line-height: 68px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p,h2 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+img {
+    max-width: 384px;
+}
+
