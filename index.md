@@ -8,6 +8,6 @@ Posts
 
 
 {% for post in site.posts %}
-* {{post.date | date: "%Y-%m-%d"}} - [{{post.title}}]({{post.url}}) ({{post.catagories}})
+* {{post.date | date: "%Y-%m-%d"}} - [{{post.title}}]({{post.url}}) ({{post.categories}})
 {% endfor %}
 
