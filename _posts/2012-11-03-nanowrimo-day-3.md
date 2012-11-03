@@ -11,7 +11,7 @@ The majority of the writing will be done using [Scrivener 2](http://www.literatu
 
 In addition to Scrivener, I am saving the scrivener file to my [Dropbox](https://www.dropbox.com) folder, so that it is automatically synced to the Internet (and hence to anything else I open it with) every time I save the file.  This way, if my laptop were to accidentally be run over by a tank or flushed down the toilet, I won't lose the work so far.
 
-The final, and probably somewhat less standard, tool that I'm using is [git](http://git-scm.com) via the [githib](https://github.com) user interface.  This means that if I manage to badly corrupt the file in someway, or delete large parts unintentionally, I can just roll back to an earlier version of the novel without losing much.
+The final, and probably somewhat less standard, tool that I'm using is [git](http://git-scm.com) via the [github](https://github.com) user interface.  This means that if I manage to badly corrupt the file in someway, or delete large parts unintentionally, I can just roll back to an earlier version of the novel without losing much.
 
 I shall sign off for now.  Next time I shall recount my approach to structuring novels to be written during NaNoWriMo, and maybe include some details of the story that I'm writing.
 
