@@ -2,6 +2,9 @@
 layout: default
 ---
 <div class="post">
+<div id="date">
+    <p>Posted: {{ page.date | date: "%Y-%m-%d" }}</p>
+</div>
 {{ content }}
 </div>
 

@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
  
+#date {
+    color: blue;
+}
+
 #footer {
     margin-top: 50px;
     border-top: 1px solid lightgray;
