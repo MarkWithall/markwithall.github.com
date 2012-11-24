@@ -3,7 +3,7 @@ layout: post
 title: How to partition a list in C#
 categories: programming
 ---
-Just to test out how the syntax highlighting works for posting blog entries, here's a short piece of code that I wrote a whilte ago to parition a list into fixed-size blocks.
+Just to test out how the syntax highlighting works for posting blog entries, here's a short piece of code that I wrote a while ago to partition a list into fixed-size blocks.
 
 {% highlight c# %}
 public static IEnumerable<IEnumerable<T>> Partition<T>(this IEnumerable<T> list, int size)
