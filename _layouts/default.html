@@ -7,7 +7,9 @@
             <!-- @import 'http://fonts.googleapis.com/css?family=Medula+One'; -->
             <!-- @import 'http://fonts.googleapis.com/css?family=ABeeZee'; -->
             <!-- @import '/css/default.css'; -->
-            <!-- @import '/css/syntax.css'; -->
+{% for css in page.extra_styles %}
+            <!-- @import '/css/{{css}}'; -->
+{% endfor %}
         </style>
     </head>
     <body>

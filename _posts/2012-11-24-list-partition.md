@@ -2,6 +2,7 @@
 layout: post
 title: How to partition a list in C#
 categories: programming
+extra_styles: syntax.css
 ---
 Just to test out how the syntax highlighting works for posting blog entries, here's a short piece of code that I wrote a while ago to partition a list into fixed-size blocks.
 
