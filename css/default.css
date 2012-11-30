@@ -1,6 +1,21 @@
+html {
+    background: url(/images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #all {
     max-width: 700px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85; 
 }
  
 #date {
