@@ -11,6 +11,9 @@
             <!-- @import '/css/{{css}}'; -->
 {% endfor %}
         </style>
+{% for js in page.javascript %}
+        <script type="text/javascript" src="{{js}}"></script>
+{% endfor %}
     </head>
     <body>
         <div id="all">
