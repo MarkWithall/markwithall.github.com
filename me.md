@@ -1,5 +1,5 @@
 ---
-permalink: /me
+permalink: /me.html
 layout: default
 title: Me On The Web
 ---
