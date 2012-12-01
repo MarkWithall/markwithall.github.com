@@ -21,11 +21,18 @@
     </head>
     <body>
         <div id="all">
-            <h1>{{ page.title }}</h1>
-            <p><a href="http://markwithall.com/atom.xml"><img src="/images/feed.png" alt="RSS Feed"/></a></p>
-            <p>Return to the <a href="/">main page</a></p>
-            <p><a href="http://nanowrimo.org/en/participants/scroog1/novels/jack-in-wonderland/stats"><img src="http://www.nanowrimo.org/widget/LiveSupporter/scroog1.png" alt="NaNoWriMo"/></a></p>
+            <div id="header">
+                <h1>{{ page.title }}</h1>
+            </div>
+            <div id="content">
             {{ content }}
+            </div>
+            <div id="links">
+            <p>Return to the <a href="/">main page</a></p>
+            <p><a href="/me.html">Other me on the Internet</a></p>
+            <p><a href="http://markwithall.com/atom.xml"><img src="/images/feed.png" alt="RSS Feed"/></a></p>
+            <p><a href="http://nanowrimo.org/en/participants/scroog1/novels/jack-in-wonderland/stats"><img src="http://www.nanowrimo.org/widget/LiveSupporter/scroog1.png" alt="NaNoWriMo"/></a></p>
+            </div>
             <div id="footer">
                 <p>Copyright &copy; Mark Withall 2012.  All rights reserved.</p>
                 <script type="text/javascript">

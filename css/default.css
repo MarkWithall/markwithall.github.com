@@ -29,12 +29,13 @@ html {
     text-align: center;
 }
 
-h1 {
+#header h1 {
     font-family: 'Medula One', serif;
     font-size: 50px;
     line-height: 68px;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+    background: url(http://www.gravatar.com/avatar/6a25f5528a714a4df8d81b177ad2f8f5) no-repeat right top;
 }
 
 h2 {
