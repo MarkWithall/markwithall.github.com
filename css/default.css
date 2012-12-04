@@ -7,9 +7,9 @@ html {
 }
 
 #all {
-    max-width: 700px;
+    max-width: 45em;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1em;
     background-color: white;
     opacity: 0.85;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
@@ -23,7 +23,7 @@ html {
 }
 
 #footer {
-    margin-top: 50px;
+    margin-top: 2em;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     text-align: center;
