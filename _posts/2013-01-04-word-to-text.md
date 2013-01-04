@@ -4,7 +4,7 @@ title: How to extract text from a Microsoft Word document in C#
 categories: programming
 extra_styles: syntax.css
 ---
-Earlier this week, I had cause to extract the text from a Microsoft Word document.  Some naughty people had decided that the best way to export a CSV file from their application, was to save it as text in a .doc file.  May my dog have mercy on their sole!
+Earlier this week, I had cause to extract the text from a Microsoft Word document.  Some naughty people had decided that the best way to export a CSV file from their application, was to save it as text in a .doc file.  May [my dog](https://www.facebook.com/HarryTheRottweiler) have mercy on their sole!
 
 One could approach this problem in a nice complicated way, using [IFilter](http://www.codeproject.com/Articles/13391/Using-IFilter-in-C) for example, but I’ve taken the brave decision to assume that someone using software that exports Word documents will have a copy of Word to hand (risky!).  This allows the much simpler solution of using Interop.
 
