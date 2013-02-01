@@ -10,7 +10,7 @@ In this particular case I was wanting to create a Search Folder containing all e
 
 Starting from the top and working our way down, the most difficult part of the exercise was the creation of the filter string.  These are rather SQL-looking beasts.  It turned out that looking at the sender email address is a rather convoluted task that involves comparing the value of "http://schemas.microsoft.com/mapi/proptag/0x0C1F001F" with the string you are interested in.  I’ve absolutely no idea why, as most of the other email header fields have far more sensible names.  Inventing a CreateSearchFolder method that takes the parameters of the Store name, the path of the folder to search in, the filter and the name of the Search Folder to create; we end up with the following:
 
-{% highlight vb %}
+{% highlight vb.net %}
 Sub AddNotInternalSearchFolder()
     Const PR_SENDER_EMAIL_ADDRESS_W As String
         = "http://schemas.microsoft.com/mapi/proptag/0x0C1F001F"
@@ -25,7 +25,7 @@ End Sub
 
 The method to create a Search Folder is then quite straightforward; remembering, of course, to check that the folder we are creating doesn't already exist.  It's just a simple case of calling the AdvancedSearch method of Application, with the data we just passed, to create a search object and then saving it to the relevant name.
 
-{% highlight vb %}
+{% highlight vb.net %}
 Sub CreateSearchFolder(storeName As String,
                        folderPath As String,
                        filter As String,
@@ -46,7 +46,7 @@ End Sub
 
 Finally, we just need to implement the check that the Search Folder doesn't already exist.  This just involves looping through the list of Search Folders and checking that none of them have the name we've provided.
 
-{% highlight vb %}
+{% highlight vb.net %}
 Function SearchFolderExists(storeName As String, folderName As String)
     SearchFolderExists = False
     For Each store In Application.Session.Stores.Item(storeName).GetSearchFolders()
