@@ -4,7 +4,7 @@ title: Create an Outlook 2010 Search Folder using VBA
 categories: programming
 extra_styles: syntax.css
 ---
-Earlier this week I discovered that Microsoft Outlook 2010 (and most likely other versions too) isn't very good anything beyond very, very simple searches.  This is even more true of searches used to create Search Folders (which appear to have more limitations on them than the Search box, for no apparent reason).  I, therefore, set about learning VBA, so that I could have more control over the creation of Search Folders.
+Earlier this week I discovered that Microsoft Outlook 2010 (and most likely other versions too) isn't very good at anything beyond very, very simple searches.  This is even more true of searches used to create Search Folders (which appear to have more limitations on them than the Search box, for no apparent reason).  I, therefore, set about learning VBA, so that I could have more control over the creation of Search Folders.
 
 In this particular case I was wanting to create a Search Folder containing all emails that weren't from one of my company's domains.  This turned out to be surprisingly difficult; as many emails only display the name of the sender and not their address.  The search only appears to search the displayed string, rather than the actual sender address.  This made me sad.
 
