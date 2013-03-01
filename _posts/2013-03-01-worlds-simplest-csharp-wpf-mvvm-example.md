@@ -83,7 +83,7 @@ Now we have our minimal MVVM framework, we can move on to create our application
 
 ## The Model
 
-Our model is simple; consisting of a single _TextConverter_ class.  To ~~avoid the annoyance of Resharper whinging that the _ConvertText_ method can be made static~~ allow the _TextConverter_ class to conform to the [Open/Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle), I've made the string conversion a parameter.
+Our model is simple; consisting of a single _TextConverter_ class.  To <del>avoid the annoyance of Resharper whinging that the _ConvertText_ method can be made static</del> allow the _TextConverter_ class to conform to the [Open/Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle), I've made the string conversion a parameter.
 
 {% highlight c# %}
 public class TextConverter
