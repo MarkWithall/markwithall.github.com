@@ -185,7 +185,7 @@ As you can see above, widgets such as labels and textboxes are just XML elements
 
 Before we move on to the definition of the _Window_ that the _UserControl_ sits in, I want to take a quick look at the code behind for this control.
 
-{% highlight xml %}
+{% highlight c# %}
 public partial class ConverterControl
 {
     public ConverterControl()
