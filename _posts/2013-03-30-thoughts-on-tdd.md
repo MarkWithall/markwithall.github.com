@@ -10,7 +10,7 @@ For TDD one must write ONE test that fails and then make it pass before moving o
 
 That's not quite true.  One should do the following:
 
-{% highlight %}
+{% highlight vb.net %}
 10 "write the simplest, meaningful failing test"
 20 "write the minimum production code to make it pass"
 30 "refactor so the code is nice"
