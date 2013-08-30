@@ -4,6 +4,8 @@ title: A Simple Event Aggregator / Message Bus In C#
 categories: programming
 extra_styles: syntax.css
 ---
+In [a previous article](/programming/2013/08/06/tdd-mvvm-framework-test-plan.html) we looked at the two most important features of an MVVM framework.  Here we look at another common feature.
+
 Most, if not all, mainstream MVVM frameworks provide some sort of event aggregator/message bus.  This makes communication between viewmodels easier than doing it manually via events or callback injection (both of which require too much knowledge of either the sender or receiver and tend to be the cause of accidental memory leaks).
 
 Fortunately, it is straightforward to create a simple event aggregator.  We can define the API using the following set of interfaces.
