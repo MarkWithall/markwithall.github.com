@@ -10,7 +10,7 @@ Below is a collection of different versions of me around the Internet.  They var
 * [@Scroog1](https://twitter.com/Scroog1)
 * [@MarkWithall](https://twitter.com/MarkWithall)
 * [@SmileyReviews](https://twitter.com/SmileyReviews)
-* [Google+](https://plus.google.com/103825140581378211124)
+* [Google+](https://plus.google.com/103825140581378211124?rel=author)
 * [YouTube](https://www.youtube.com/RogerSpelvin)
 * [Blogger](http://unblogfrancais.blogspot.co.uk)
 * [Google Scholar](https://scholar.google.co.uk/citations?user=NILce7UAAAAJ)
