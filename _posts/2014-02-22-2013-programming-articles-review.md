@@ -3,8 +3,6 @@ layout: post
 title: 2013 Programming Articles Review
 categories: programming
 ---
-2013 Programming Articles Review
-
 At the beginning of each year I like to set myself some goals for the coming twelve months.  Last year (2013), I decided I wanted to blog more.  In particular, I wanted to write more about programming.  One of the main reasons for this was that I wanted to give myself some practice at explaining my thought process; an area in which I’ve not always excelled in the past.
 
 Over the year, I managed to write nine articles, on a fairly diverse set of programming topics.  While I fell short of my ‘one a month’ goal, I still consider this a success.  I suppose, as with most new year’s resolution type things, it was inevitable that it would tail off in the second half of the year.
