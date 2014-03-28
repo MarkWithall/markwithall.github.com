@@ -68,7 +68,7 @@ img {
 }
 
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
     #all {
         width: 45em;
         margin: 0 auto;
