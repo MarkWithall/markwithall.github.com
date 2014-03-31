@@ -67,6 +67,10 @@ img {
     overflow: auto;
 }
 
+@viewport, @-ms-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
 
 @media (min-width: 48em) {
     #all {
