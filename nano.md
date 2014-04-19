@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Programming
-permalink: /programming/
+title: NaNoWriMo
+permalink: /nano/
 ---
-{% for post in site.categories.programming %}
+{% for post in site.categories.nano %}
     {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
         {% if currentyear != year %}
 ##{{ currentyear }}
-        {% capture year %}{{currentyear}}{% endcapture %}
-    {% endif %}
+            {% capture year %}{{currentyear}}{% endcapture %}
+        {% endif %}
 * [{{post.title}}]({{post.url}})
 {% endfor %}
 

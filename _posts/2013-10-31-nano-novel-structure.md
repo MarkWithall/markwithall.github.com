@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NaNo Novel Structure
-categories: nano2013
+categories: nano
 ---
 My usual approach to make novelling in November easier is to have a fairly rigid structure in place.  This has two goals: the first is to allow me to end up with a balanced novel and the second is to give me a sense of achievability and progress.
 

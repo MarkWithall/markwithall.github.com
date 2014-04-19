@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NaNoWriMo 2012 - Day 11
-categories: nano2012
+categories: nano
 ---
 Have reached 20,001 words so far.  About two days ahead of target.
 

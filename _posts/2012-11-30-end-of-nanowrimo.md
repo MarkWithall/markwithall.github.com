@@ -1,7 +1,7 @@
 ---
 layout: post
 title: End Of NaNoWriMo 2012
-categories: nano2012
+categories: nano
 javascript:
 - http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
 - https://www.google.com/jsapi

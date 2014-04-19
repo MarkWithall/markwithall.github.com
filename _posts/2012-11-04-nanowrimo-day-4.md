@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NaNoWriMo 2012 - Day 4
-categories: nano2012
+categories: nano
 ---
 My word count is up to 7695 words.  This is very pleasing as it is ahead of the target.
 
