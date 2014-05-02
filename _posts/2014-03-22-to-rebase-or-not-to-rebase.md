@@ -18,7 +18,6 @@ _Updated 18th April 2014 with some comments from my colleague [@DaveCTurner](htt
 
 ###Cons
 * Can’t bisect to find cause of bugs (requires linear history)
-
   - Non-linear histories mean that working and non-working versions can be interleaved making it unlikely that bisect will end up at the revision that caused the bug
 * Difficult to read the history
 * _Further con of merging is that conflict resolution is atomic. If you have a knarly merge then doing it in pieces is better. I claim that resolving conflicting patches in the queue is much easier than 3-way merging_ [@DaveCTurner](https://twitter.com/davecturner)
@@ -41,7 +40,6 @@ Rebase means different things to different people.  Let me start by clarifying w
   - Or better, if there is a conflict, rebase using the patch queue and name the commits that resolve conflicts explicitly
   - This is less of an issue if you have good test coverage
 * Can only be done with local changesets (i.e. before pull or push); hence can prevent collaboration on a branch
-
   - _You can collaborate on a branch when rebasing, either with bundles or a private clone set up for just the branch. Requires about the same amount of coordination as the alternatives._ [@DaveCTurner](https://twitter.com/davecturner)
 
 Personally, I tend to favour the rebase approach as I’m somewhat OCD about having a pretty looking graph of the history.

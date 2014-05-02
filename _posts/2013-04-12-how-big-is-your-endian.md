@@ -6,6 +6,7 @@ categories: programming
 I have finally discovered some of the advantages and disadvantages of the two main endian-nesses for data representation.  This isn’t something I’ve really thought about before but it’s actually quite interesting when you find out.
 
 Big-endian (the firstianness of this endian should not be interpreted as any sort of favouritism whatsoever towards this particular representation)
+
 * Human-readable, i.e. reading from left to right tells you what the data is
 * Testing for sign, i.e. the leftmost bit is the positivity/negativity
 

@@ -63,11 +63,13 @@ Obviously, wrapping that in a <code>try/catch</code> block or similar, with appr
 To conclude:
 
 Pros
+
 * Simple
 * Short
 * Supports both .doc and .docx (and probably other formats too)
 
 Cons
+
 * Requires Word
 * Slow
 
