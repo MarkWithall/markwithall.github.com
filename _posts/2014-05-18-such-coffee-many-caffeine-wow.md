@@ -23,7 +23,7 @@ DHH has a goal of readability of code over testability of code.  He seems to be 
 
 But, more than that, the most readable code in the world won't be able to overcome there being one million lines of it.  [Steve Losh](http://stevelosh.com/blog/2013/09/teach-dont-tell/) had a wonderful article on how to document code, which basically said that reading the code should be the last resort to understanding your codebase.
 
-Just remember, these are all individual views.  I've seen a tree trunk, DHH has seen a snake but we are still yet to properly address the elephant in the room.
+Just remember, these are all [individual views](http://codon.com/the-dhh-problem).  I've seen a tree trunk, DHH has seen a snake but we are still yet to properly address the elephant in the room.
 
 I'm sure I'll have many more thoughts on this subject as the debate goes on but writing down their current state will allow me to look back and point and laugh at the silly conclusions I drew early on in the proceedings.
 
