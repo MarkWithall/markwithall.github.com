@@ -12,7 +12,7 @@ I’d like to walk through a thought process that might get you to something sim
 
 Firstly, let’s look at how one might approach this problem in a ‘one off’ case; where reuse isn’t an issue.
 
-{% highlight c# %}
+{% highlight xml %}
 <Grid>
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto"/>
@@ -42,7 +42,7 @@ This is clearly quite a verbose solution and there must be a better way if we ar
 
 Before we try and solve the problem, it might be a good idea to think in the abstract of what we would like to be able to write in an ideal world.  It’s probably going to look something along the lines of this:
 
-{% highlight c# %}
+{% highlight xml %}
 <LayoutGroup>
     <LabelledTextBox Label="Thing1" Text="{Binding Thing1}"/>
     <LabelledTextBox Label="Thing2" Text="{Binding Thing2}"/>
@@ -58,7 +58,7 @@ So how are we going to go about this?  Let us start at the bottom and look at ho
 
 ## LabelledTextBox.xaml
 
-{% highlight c# %}
+{% highlight xml %}
 <Grid x:Name="Root">
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" SharedSizeGroup="Labels"/>
@@ -127,7 +127,7 @@ public class LayoutGroup : StackPanel
 
 This gives us the ability to put it all together in the following way that is very similar to our initial desired solution (with the exception of references to the namespace path of the controls).
 
-{% highlight c# %}
+{% highlight xml %}
 <Views:LayoutGroup>
     <Views:LabelledTextBox Label="Thing1" Text="{Binding Thing1}"/>
     <Views:LabelledTextBox Label="Thing2" Text="{Binding Thing2}"/>
