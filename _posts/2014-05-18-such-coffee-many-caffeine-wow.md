@@ -27,3 +27,7 @@ Just remember, these are all [individual views](http://codon.com/the-dhh-problem
 
 I'm sure I'll have many more thoughts on this subject as the debate goes on but writing down their current state will allow me to look back and point and laugh at the silly conclusions I drew early on in the proceedings.
 
+## Update: My Lightning Talk Video
+
+<iframe src="//player.vimeo.com/video/96915724?title=0&amp;byline=0&amp;portrait=0&amp;color=f3b940" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/96915724">Mark Withall - Lightning talk</a> from <a href="http://vimeo.com/user11456649">BACON: things developers love</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
