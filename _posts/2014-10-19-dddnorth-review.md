@@ -35,5 +35,5 @@ This talk was by [Riccardo Viglianisi](https://twitter.com/captainshmaser).  A s
 
 This talk was by [Kiran Singh](https://twitter.com/Roarkiran).  I was rather flagging at this point.  The speaker told of the benefits of microservices such as independent deployability and that working with distinct services lowers cognitive load.  He also gave some advice for working with microservices, such as the need for good integration testing and that building microservices requires something of a culture change for the organisation not just a software change.  For more details, read Martin Fowler's [microservices article](http://martinfowler.com/articles/microservices.html).  He gave a couple of case studies and reminded me that I still haven't read [The Black Swan](http://www.amazon.co.uk/Black-Swan-Impact-Highly-Improbable-ebook/dp/B002RI99IM/).
 
-Many, many thanks are due to the people who ran and sponsored the event.  The day ended with drinks and dinner with some colleagues in Veritas (a pub who's menu knows not of the word bland).
+Many, many thanks are due to the people who ran and sponsored the event.  The day ended with drinks and dinner with some colleagues in Veritas (a pub whose menu knows not the word bland).
 
