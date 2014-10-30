@@ -6,7 +6,7 @@ title: Wedding 2.0
 
 ## Now with added paperwork!
 
-## Saturday, 13st January 2105
+## Saturday, 13th January 2015
 
 ## Wedding Venue
 
