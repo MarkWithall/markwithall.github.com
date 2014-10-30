@@ -30,7 +30,7 @@ Nearest parking is at St Giles multi-storey car park on St Giles Street (postcod
         <label for="nameinput">Name(s)</label>
         <input type="text" name="name" id="nameinput" size="72"/>
         <br/>
-        <input type="radio" name="response" value="yes" checked="checked">Yes, I willing be coming to your wedding</input>
+        <input type="radio" name="response" value="yes" checked="checked">Yes, I will be coming to your wedding</input>
         <br/>
         <input type="radio" name="response" value="no">Sorry, I can't make it</input>
         <br/>
