@@ -11,7 +11,7 @@ Below is the current casting of each pair of characters.  I shall endeavour to u
 
 * Earl Gray: []()
 * Lady Gray: [Lucy Lawless](http://www.imdb.com/name/nm0005128/)
-* Master Gray: []()
+* Master Gray: [Michael Pitt](http://www.imdb.com/name/nm0685856/)
 
 * Mr Ruby: [Max Martini](http://www.imdb.com/name/nm0242882/)
 * Mrs Ruby: [Christina Hendricks](http://www.imdb.com/name/nm0376716/)
@@ -19,8 +19,8 @@ Below is the current casting of each pair of characters.  I shall endeavour to u
 * Father Jade:[]()
 * Sister Mary Leaf: []()
 
-* Mr Ivory: []()
-* Mrs Ivory:[]()
+* Mr Ivory: [Idris Elba](http://www.imdb.com/name/nm0252961/)
+* Mrs Ivory:[Amber Heard](http://www.imdb.com/name/nm1720028/)
 
 * Professor Pear: [Jack Nicholson](http://www.imdb.com/name/nm0000197/)
 * Professor Pear: []()
