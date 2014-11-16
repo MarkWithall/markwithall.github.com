@@ -14,7 +14,7 @@ Below is the current casting of each pair of characters.  I shall endeavour to u
 * Lady Gray: [Lucy Lawless](http://www.imdb.com/name/nm0005128/)
 * Master Gray: [Michael Pitt](http://www.imdb.com/name/nm0685856/)
 
-## ???
+## Conservatory
 * Mr Ruby: [Max Martini](http://www.imdb.com/name/nm0242882/)
 * Mrs Ruby: [Christina Hendricks](http://www.imdb.com/name/nm0376716/)
 
@@ -22,13 +22,13 @@ Below is the current casting of each pair of characters.  I shall endeavour to u
 * Father Jade:[Johnny Depp](http://www.imdb.com/name/nm0000136/)
 * Sister Mary Leaf: [Michelle Trachtenberg](http://www.imdb.com/name/nm0005502/)
 
-## ???
+## Kitchen
 * Mr Ivory: [Idris Elba](http://www.imdb.com/name/nm0252961/)
 * Mrs Ivory:[Amber Heard](http://www.imdb.com/name/nm1720028/)
 
-## ???
+## Ballroom
 * Professor Pear: [Jack Nicholson](http://www.imdb.com/name/nm0000197/)
-* Professor Pear: []()
+* Professor Pear: [Jeanne Tripplehorn](http://www.imdb.com/name/nm0000675/)
 
 ## Dining Room
 * Commandant Dijon: [Vincent Cassel](http://www.imdb.com/name/nm0001993/)
