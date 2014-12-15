@@ -6,7 +6,7 @@ title: Wedding 2.0
 
 ## Now with added paperwork!
 
-## Saturday, 31st January 2015
+## Saturday, 31st January 2015, 4pm
 
 ## Wedding Venue
 
