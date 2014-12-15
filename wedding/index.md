@@ -22,6 +22,10 @@ title: Wedding 2.0
 
 Nearest parking is at St Giles multi-storey car park on St Giles Street (postcode NR2&nbsp;1JL).  A little further away, but cheaper, is St Andrews multi-storey car park on Duke Street (postcode NR3&nbsp;3AT).
 
+## Hotel
+
+The official wedding hotel is the [Premier Inn Hotel Norwich Nelson City Centre](http://www.premierinn.com/en/checkHotel/NORNEL/norwich-nelson-city-centre).
+
 ## RSVP
 
 <form action="http://forms.brace.io/adieslabyrinth@gmail.com" method="post">
