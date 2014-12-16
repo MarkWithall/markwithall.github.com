@@ -24,7 +24,7 @@ Nearest parking is at St Giles multi-storey car park on St Giles Street (postcod
 
 ## Hotel
 
-The official wedding hotel is the [Premier Inn Hotel Norwich Nelson City Centre](http://www.premierinn.com/en/checkHotel/NORNEL/norwich-nelson-city-centre).
+If you feel in need of somewhere to stay overnight, why not book yourself into the official wedding hotel: [Premier Inn Hotel Norwich Nelson City Centre](http://www.premierinn.com/en/checkHotel/NORNEL/norwich-nelson-city-centre).
 
 ## RSVP
 
