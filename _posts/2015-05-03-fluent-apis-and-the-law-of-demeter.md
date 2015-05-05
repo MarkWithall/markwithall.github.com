@@ -5,7 +5,7 @@ categories: programming
 extra_styles: syntax.css
 ---
 In object oriented programming the [Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter
-) states that a class shouldn’t reached through associated classes into the details of other classes beyond.  This is often stated as “use only one dot”.  This formulation, on the face of it, seems to have worrying implications for the use of [fluent APIs](http://en.wikipedia.org/wiki/Fluent_interface
+) states that a class shouldn’t reach through associated classes into the details of other classes beyond.  This is often stated as “use only one dot”.  This formulation, on the face of it, seems to have worrying implications for the use of [fluent APIs](http://en.wikipedia.org/wiki/Fluent_interface
 ), such as [.NET LINQ](https://msdn.microsoft.com/en-us/library/bb397926.aspx
 ).
 
