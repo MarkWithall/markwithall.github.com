@@ -10,7 +10,7 @@ In object oriented programming the [Law of Demeter](http://en.wikipedia.org/wiki
 ).
 
 Below is a simple example with two levels.  The first represents a train and the second the details of each stop that the train makes.  The Law of Demeter says that if we are playing with trains, we shouldn’t be able to see the details of stops, i.e. something that has a train, shouldn’t look at departure times.
-
+I
 ##First Level Interface
 
 {% highlight c# %}
@@ -46,7 +46,7 @@ public IEnumerable<IStop> Legal(IEnumerable<ITrain> trains)
 }
 {% endhighlight %}
 
-Whilst there are many dots used in the above code, nothing reaches through the `ITrain` interface and into the details of the `ILocation` interface.  Hence, the Law of Demeter is complied with.
+Whilst there are many dots used in the above code, nothing reaches through the `ITrain` interface and into the details of the `IStop` interface.  Hence, the Law of Demeter is complied with.
 
 ##Illegal Usage
 
@@ -59,7 +59,7 @@ public IEnumerable<IStop> Illegal(IEnumerable<ITrain> train)
 }
 {% endhighlight %}
 
-Here there are in fact fewer dots used than in the legal example above.  However, we are reaching through into the details of the `ILocation` interface (accessing the `DepartureTime` property that the Law of Demeter says we shouldn’t know about).
+Here there are in fact fewer dots used than in the legal example above.  However, we are reaching through into the details of the `IStop` interface (accessing the `DepartureTime` property that the Law of Demeter says we shouldn’t know about).
 
 As we have shown above, it is perfectly possible to comply with the Law of Demeter whilst using fluent APIs but it is necessary to be careful when doing so.
 
