@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test Driven Development As If You Meant It Reviewed (Part I)
+title: Test Driven Development As If You Meant It Reviewed
 categories: programming
 ---
 
@@ -8,7 +8,7 @@ This is the first in a short series of articles about Test Driven Development.
 
 This article was written with and is [also published by](http://matatk.agrip.org.uk/articles/test-driven-development-as-if-you-meant-it-reviewed-part-1/) Matthew Atkinson.
 
-##Introduction
+#Part I: Introduction
 
 Writing [tests before you write any code](http://www.diveintopython.net/unit_testing/stage_1.html) is awesome. It means that you can rely on the code you've written to work (most of the time) and you can [refactor with wild abandon, for example to improve performance](http://www.diveintopython.net/refactoring/), because it's trivial to re-run the tests to check the code still behaves itself. However, as with pretty-much everything else, there are many ways to actually *do* Test Driven Development (or TDD, as most refer to it), two of which we explored in detail.
 
