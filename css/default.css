@@ -63,6 +63,14 @@ img {
     overflow: auto;
 }
 
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
 @viewport, @-ms-viewport {
     zoom: 1.0;
     width: extend-to-zoom;
