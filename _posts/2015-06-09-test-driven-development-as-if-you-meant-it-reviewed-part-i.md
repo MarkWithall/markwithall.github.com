@@ -2,9 +2,12 @@
 layout: post
 title: TDD As If You Meant It Reviewed (Part I)
 categories: programming
+series: TDD As If You Meant It Reviewed
 ---
 
 This is the first in a short series of articles about Test Driven Development.
+
+{% include series.html %}
 
 This article was written with and is [also published by](http://matatk.agrip.org.uk/articles/test-driven-development-as-if-you-meant-it-reviewed-part-1/) Matthew Atkinson.
 
