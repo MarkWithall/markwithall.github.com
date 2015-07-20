@@ -1,14 +1,3 @@
-{% assign count = '0' %}
-{% assign idx = '0' %}
-{% for post in site.posts reversed %}
-    {% if post.series == page.series %}
-        {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-        {% if post.url == page.url %}
-            {% capture idx %}{{count}}{% endcapture %}
-        {% endif %}
-    {% endif %}
-{% endfor %}
-
 <div class="seriesNote">
     <ul>
         {% assign count = '0' %}
