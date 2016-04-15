@@ -10,12 +10,12 @@ For TDD one must write ONE test that fails and then make it pass before moving o
 
 That's not quite true.  One should do the following:
 
-{% highlight vb.net %}
+```vb
 10 "write the simplest, meaningful failing test"
 20 "write the minimum production code to make it pass"
 30 "refactor so the code is nice"
 40 goto 10
-{% endhighlight %}
+```
 
 Refactoring should not be delayed; there would be no need to delay it as the code is arguably ‘complete’ at this point (as it does everything that the tests say it should do).
 

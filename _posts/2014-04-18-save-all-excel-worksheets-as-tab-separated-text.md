@@ -8,7 +8,7 @@ Quite often I have to save worksheets in Excel as tab-separated text or CSV.  I 
 
 I started off by writing a simple macro that saved all the worksheets in the active workbook to the desktop.  I then placed it in my PERSONAL.XLSB (which is an incredibly useful place to put macros that you want to use on multiple spreadsheets as it’s always there; hidden in the background).
 
-{% highlight vb.net %}
+```vb
 Sub SaveAllAsTsv()
 
     Dim WS As Excel.Worksheet
@@ -23,13 +23,13 @@ Sub SaveAllAsTsv()
     Next
 
 End Sub
-{% endhighlight %}
+```
 
 One interesting point to note is the `Local:=True` argument to the SaveAs method.  This makes sure that the formatting of, e.g. dates, is exported as it is presented in the worksheet rather than using whatever default the SaveAs method decides upon.
 
 This approach worked fine for a while but then I started to have spreadsheets with far more worksheets than I actually wanted to export.  Copying them from the desktop was a bit of a pain too.  I, therefore, went back to the macro and expanded upon it to allow selection of the destination folder and the option whether to save each worksheet.
 
-{% highlight vb.net %}
+```vb
 Sub SaveAllAsTsv()
 
     Dim WS As Excel.Worksheet
@@ -57,6 +57,6 @@ Sub SaveAllAsTsv()
     Next
 
 End Sub
-{% endhighlight %}
+```
 
 This works fine for now.  I imagine that at some point I’m going to get annoyed with clicking ‘Yes’ or ‘No’ for each worksheet and will have to upgrade to a single list of all worksheets with checkboxes up front.  I’ll leave this extension as an exercise for the reader.

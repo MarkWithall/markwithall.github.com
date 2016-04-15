@@ -11,7 +11,7 @@ This is the first in a short series of articles about Test Driven Development.
 
 This article was written with and is [also published by](http://matatk.agrip.org.uk/articles/test-driven-development-as-if-you-meant-it-reviewed-part-1/) Matthew Atkinson.
 
-#Part I: Introduction
+# Part I: Introduction
 
 Writing [tests before you write any code](http://www.diveintopython.net/unit_testing/stage_1.html) is awesome. It means that you can rely on the code you've written to work (most of the time) and you can [refactor with wild abandon, for example to improve performance](http://www.diveintopython.net/refactoring/), because it's trivial to re-run the tests to check the code still behaves itself. However, as with pretty-much everything else, there are many ways to actually *do* Test Driven Development (or TDD, as most refer to it), two of which we explored in detail.
 
@@ -29,7 +29,7 @@ and different views on these sorts of things.
 
 A more pedantic flavour of TDD has been proposed that caught our attention, so we had to give it a go...
 
-##What Is TDDAIYMI?
+## What Is TDDAIYMI?
 
 [Test Driven Development As If You Meant It (TDDAIYMI)](http://cumulative-hypotheses.org/2011/08/30/tdd-as-if-you-meant-it/) is a TDD workshop exercise devised by [Keith Braithwaite](https://twitter.com/keithb_b). It was first presented at [Software Craftsmanship 2009](http://www.codemanship.co.uk/softwarecraftsmanship/).
 
@@ -37,7 +37,7 @@ The exercise aims to apply TDD in the most pedantic way possible; to stretch one
 
 TTDAIYMI takes the form of a re-phrasing of the standard TDD steps, as follows (taken from the original article, see above).
 
-###The Rules
+### The Rules
 
 1. Write exactly one new test, the smallest test you can that seems to point in the direction of a solution
 2. See it fail
@@ -49,11 +49,11 @@ TTDAIYMI takes the form of a re-phrasing of the standard TDD steps, as follows (
     2.  **you want a new class -- wait until refactoring time, then...** create non-test classes to provide a destination for a Move Method and for no other reason
         1. populate implementation classes with methods by doing Move Method, and no other way
 
-##How Does It Differ From 'Normal' TDD?
+## How Does It Differ From 'Normal' TDD?
 
 There are many approaches to TDD but, for our comparison, let us take Uncle Bob's 'Three Laws' approach.
 
-###The Three Laws Of TDD
+### The Three Laws Of TDD
 
 ['Uncle' Bob Martin](https://twitter.com/unclebobmartin), in his article on the [Three Laws of TDD](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd), clarifies the <span style="color: red;">RED</span>-<span style="color: green;">GREEN</span>-<span style="color: blue;">REFACTOR</span> process with some restrictions upon how to follow the steps. These clarifications are as follows:
 
@@ -63,6 +63,6 @@ There are many approaches to TDD but, for our comparison, let us take Uncle Bob'
 
 This is already quite similar to TDDAIYMI but with the added flexibility to infer the existence of production code (or at least interfaces/protocols that other production code might implement); in fact, in some ways it actively encourages it by allowing you to break up the creation of a single test into multiple <span style="color: red;">RED</span>-<span style="color: green;">GREEN</span>-<span style="color: blue;">REFACTOR</span> steps, creating little bit of missing production code as you go.
 
-##Next Time
+## Next Time
 
 In the rest of this series we are going to write about our experiences of trying out TDDAIYMI on a small project and then comparing it to a more traditional TDD approach tackling the same problem.

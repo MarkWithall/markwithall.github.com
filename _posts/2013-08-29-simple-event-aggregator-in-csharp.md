@@ -12,36 +12,36 @@ Fortunately, it is straightforward to create a simple event aggregator.  We can 
 
 ## `ISubscriber<TMessage>`
 
-{% highlight c# %}
+```c#
 public interface ISubscriber<in TMessage>
 {
     void HandleMessage(TMessage message);
 }
-{% endhighlight %}
+```
 
 This allows a class to implement multiple event handlers without the need to switch on the message type.
 
 ## `ISubscriberStore`
 
-{% highlight c# %}
+```c#
 public interface ISubscriberStore
 {
     void Add<TMessage>(ISubscriber<TMessage> subscriber);
     IEnumerable<ISubscriber<TMessage>> Subscribers<TMessage>();
 }
-{% endhighlight %}
+```
 
 No `Remove` method, as subscriptions will be stored as weak references and are cleaned up on calls to Subscribers.
 
 ## `IMessageAggregator`
 
-{% highlight c# %}
+```c#
 public interface IMessageAggregator
 {
     void Subscribe<TMessage>(ISubscriber<TMessage> subscriber);
     void Publish<TMessage>(TMessage message);
 }
-{% endhighlight %}
+```
 
 No `Unsubscribe` method, as subscriptions are stored as weak references and are cleaned up on calls to publish.
 

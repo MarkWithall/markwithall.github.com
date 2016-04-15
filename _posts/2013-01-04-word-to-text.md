@@ -12,7 +12,7 @@ The first step is to add <code>Microsoft.Office.Interop.Word</code> to project r
 
 We don’t want that nasty Interop stuff leaking all over the place, so I’ve created a nice simple little class that hides it away with a nicer interface.  Notice, I’ve made the class implement IDisposable, so that we can encapsulate the whole usage of Word in a using block; making the scope completely obvious.
 
-{% highlight c# %}
+```c#
 using Microsoft.Office.Interop.Word;
 
 public class WordApplication : IDisposable
@@ -43,11 +43,11 @@ public class WordApplication : IDisposable
         _application.Application.Quit();
     }
 }
-{% endhighlight %}
+```
 
 This leaves us with a much nicer API to work with.  We can now simply create a new .txt file from the old .doc as follows.
 
-{% highlight c# %}
+```c#
 public static void ConvertDocToTxt(string docFilename, string txtFilename)
 {
     using (var application = new WordApplication())
@@ -56,7 +56,7 @@ public static void ConvertDocToTxt(string docFilename, string txtFilename)
        application.SaveAsText(txtFilename);
     }
 }
-{% endhighlight %}
+```
 
 Obviously, wrapping that in a <code>try/catch</code> block or similar, with appropriate exception handling would be the way forward.  In real life one would also most likely introduce some interface to allow mocking, etc.
 

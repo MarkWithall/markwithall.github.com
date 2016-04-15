@@ -31,7 +31,7 @@ The first is a base class for ViewModel classes.  This handles the implementatio
 
 The simplest implementation is as follows:
 
-{% highlight c# %}
+```c#
 public class ObservableObject : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
@@ -43,7 +43,7 @@ public class ObservableObject : INotifyPropertyChanged
             handler(this, new PropertyChangedEventArgs(propertyName));
     }
 }
-{% endhighlight %}
+```
 
 This can be expanded in various ways.  For example, we could add checking that the property name exists for the given class.
 
@@ -51,7 +51,7 @@ The second component is an implementation of the _ICommand_ interface.  This is 
 
 The simplest implementation is as follows:
 
-{% highlight c# %}
+```c#
 public class DelegateCommand : ICommand
 {
     private readonly Action _action;
@@ -75,7 +75,7 @@ public class DelegateCommand : ICommand
     public event EventHandler CanExecuteChanged;
 #pragma warning restore 67
 }
-{% endhighlight %}
+```
 
 One thing to note is that _CanExecute_ always returns true.  Don't you just hate it when a button or a menuitem is greyed-out for no apparent reason?  Don't do it!  Much better to allow the button to be clicked and then give some informative feedback as to why the intended action cannot be carried out.
 
@@ -85,7 +85,7 @@ Now we have our minimal MVVM framework, we can move on to create our application
 
 Our model is simple; consisting of a single _TextConverter_ class.  To <del>avoid the annoyance of Resharper whinging that the _ConvertText_ method can be made static</del> allow the _TextConverter_ class to conform to the [Open/Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle), I've made the string conversion a parameter.
 
-{% highlight c# %}
+```c#
 public class TextConverter
 {
     private readonly Func<string, string> _convertion;
@@ -100,13 +100,13 @@ public class TextConverter
         return _convertion(inputText);
     }
 }
-{% endhighlight %}
+```
 
 ## The ViewModel
 
 We also only have a single _Presenter_ class in our ViewModel.  This is, however, slightly more complex than the Model.
 
-{% highlight c# %}
+```c#
 public class Presenter : ObservableObject
 {
     private readonly TextConverter _textConverter
@@ -147,7 +147,7 @@ public class Presenter : ObservableObject
             _history.Add(item);
     }
 }
-{% endhighlight %}
+```
 
 Notice that we are inheriting from our MVVM framework _ObservableObject_, which provides our implementation of the _INotifyPropertyChanged_ interface.  Our presenter is exposing three properties that the View can bind to.  We'll look at them one at a time.
 
@@ -163,7 +163,7 @@ That's all of the coding out of the way with, now we can move on to 'drawing' th
 
 The nice thing about WPF for me is that we can define the entire user interface in XML, without having to write a single line of code.  We just need to bind widgets to the ViewModel to read and write data.
 
-{% highlight xml %}
+```xml
 <UserControl ...>
 
     <UserControl.InputBindings>
@@ -179,13 +179,13 @@ The nice thing about WPF for me is that we can define the entire user interface 
     </StackPanel>
     
 </UserControl>
-{% endhighlight %}
+```
 
 As you can see above, widgets such as labels and textboxes are just XML elements.  The _Text_ attribute of the _TextBox_ has been bound to _SomeText_ in our presenter and the _ItemsSource_ attribute of the _ListBox_ has been bound to _History_.  Notice that the _ConvertTextCommand_ property has been bound to two things, the _KeyBinding_ and the _Button_.  We needn't have stopped there.  We could have bound it to an item in a menu too.  In fact, we can bind anything as many times as we like, allowing us to have several different ways of displaying the same data.  We could, for example, have a list of numbers in our ViewModel that is bound both to a table of data and to a chart.
 
 Before we move on to the definition of the _Window_ that the _UserControl_ sits in, I want to take a quick look at the code behind for this control.
 
-{% highlight c# %}
+```c#
 public partial class ConverterControl
 {
     public ConverterControl()
@@ -193,13 +193,13 @@ public partial class ConverterControl
         InitializeComponent();
     }
 }
-{% endhighlight %}
+```
 
 Notice that there is absolutely nothing superfluous in it whatsoever.  There's no code to read and write the text in the textbox; no event handlers to process button clicks. Everything is done through binding to the ViewModel.  You literally can't have less code in the _.xaml.cs_ file.  This makes our application much easier to write tests for.
 
 Our final piece of UI description is the main window.
 
-{% highlight xml %}
+```xml
 <Window ...
         Title="Converter"
         MinWidth="300"
@@ -213,7 +213,7 @@ Our final piece of UI description is the main window.
     <View:ConverterControl/>
     
 </Window>
-{% endhighlight %}
+```
 
 This has two points of interest.  Firstly, we are specifying that the context for the Window is an instance of the _Presenter_ class in our ViewModel (which will be created for us when the window is created).  Secondly, we are specifying that the UI is made up of a _ConverterControl_ that we defined above, which will inherit that data context.
 

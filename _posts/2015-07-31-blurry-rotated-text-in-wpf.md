@@ -8,7 +8,7 @@ Just a short little post today, as I’m going to forget this if I don’t write
 
 Sometimes when you transform text in WPF it ends up rendering blurred at runtime.  Annoyingly, it will quite often appear fine in Visual Studio’s designer.  Take, for example, the following expander header.
 
-{% highlight xml %}
+```xml
 <Expander.Header>
     <TextBlock Text="Running Dates">
         <TextBlock.LayoutTransform>
@@ -16,7 +16,7 @@ Sometimes when you transform text in WPF it ends up rendering blurred at runtime
         </TextBlock.LayoutTransform>
     </TextBlock>
 </Expander.Header>
-{% endhighlight %}
+```
 
 It looks fine in the designer
 
@@ -28,7 +28,7 @@ but at runtime it goes blurry
 
 Adding [`TextOptions.TextFormattingMode`](https://msdn.microsoft.com/en-us/library/system.windows.media.textoptions.textformattingmode(v=vs.100).aspx)`="`[`Display`](https://msdn.microsoft.com/en-us/library/system.windows.media.textformattingmode(v=vs.100).aspx)`"` to the `TextBlock` fixes this by using GDI-compatible font metrics.
 
-{% highlight xml %}
+```xml
 <Expander.Header>
     <TextBlock Text="Running Dates" TextOptions.TextFormattingMode="Display">
         <TextBlock.LayoutTransform>
@@ -36,7 +36,7 @@ Adding [`TextOptions.TextFormattingMode`](https://msdn.microsoft.com/en-us/libra
         </TextBlock.LayoutTransform>
     </TextBlock>
 </Expander.Header>
-{% endhighlight %}
+```
 
 Now it looks much better at runtime.
 

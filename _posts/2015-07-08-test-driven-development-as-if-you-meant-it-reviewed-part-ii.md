@@ -11,13 +11,13 @@ This is the second in a short series of articles about Test Driven Development.
 
 This article was written with and is [also published by](http://matatk.agrip.org.uk/articles/test-driven-development-as-if-you-meant-it-reviewed-part-2/) Matthew Atkinson.
 
-#Part II: The Problem
+# Part II: The Problem
 
-##The Problem: Noughts And Crosses (Tic-Tac-Toe in American)
+## The Problem: Noughts And Crosses (Tic-Tac-Toe in American)
 
 In [Keith Braithwaite's](https://twitter.com/keithb_b) original exercise, the problem tackled was [Noughts and Crosses](https://en.wikipedia.org/wiki/Tic-tac-toe).  To allow us to compare with other attempts out on the Internet, we are going to tackle the same problem.  We intentionally didn't fully define the problem in advance; except to focus on the game management aspects, rather than any AI components.
 
-##Language/Library Choices
+## Language/Library Choices
 
 We decided to do the exercise in Python (2.7), as it was the language with which we had the highest average skill level.  We used [pytest](http://pytest.org/latest/) and [mock](https://pypi.python.org/pypi/mock) for testing and [pytest-xdist](https://pypi.python.org/pypi/pytest-xdist) to allow the test to run continuously in the background and keep us honest.
 
@@ -25,7 +25,7 @@ Code was written in Vim (because, y'know, it's better than [REDACTED], etc.).  [
 
 The whole was wrapped up in [virtualenv](https://virtualenv.pypa.io) to make it easy to get up and running with a standard environment.
 
-##Methodology
+## Methodology
 
 We started with some TDDAIYMI 'dry runs' to get the hang of using this technique as, whilst it seems very-much like TDD on paper, it 'feels' quite different to use it.  We then carried out our 'control' exercise of 'traditional' TDD and finally followed this up with a serious go at the problem in TDDAIYMI style.
 
@@ -39,6 +39,6 @@ During the exercises we were looking out for:
 * How we feel TDDAIYMI might be improved
 * General lessons learnt
 
-##Next Time
+## Next Time
 
 We finally get the f*** on with it.
