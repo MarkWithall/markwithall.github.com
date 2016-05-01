@@ -8,6 +8,15 @@
         <meta name="description" content="My personal webpage and blog about software engineering, writing, music, films, reading, travel and whatever else I get up to"/>
         <meta name="keywords" content="programming,writing,NaNoWriMo,music,blog"/>
         <meta name="author" content="Dr Mark Withall BSc (hons) PhD"/>
+
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@MarkWithall"/>
+        <meta name="twitter:creator" content="@MarkWithall"/>
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Mark Withall{% endif %} "/>
+        {% if page.url %}<meta name="twitter:url" content="http://www.markwithall.com{{ page.url }}"/> {% endif %}
+        <meta name="twitter:description" content="{% if page.description %} {{ page.description }}{% else %}Mark Withall{% endif %}"/>
+        <meta name="twitter:image:src" content="{% if page.image %}http://www.markwithall.com{{ page.image }}{% else %}http://www.gravatar.com/avatar/6a25f5528a714a4df8d81b177ad2f8f5{% endif %}"/>
+        
         <link rel="author" href="https://plus.google.com/+MarkWithall/?rel=author" />
         <style type="text/css">
             <!-- @import 'http://fonts.googleapis.com/css?family=Medula+One'; -->
