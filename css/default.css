@@ -45,10 +45,20 @@ h2 {
     font-weight: bold;
 }
 
-p,h2,li {
+p,li {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.9;
+}
+
+h2 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.9;
+}
+
+pre {
+    font-size: 1.1em;
 }
 
 #footer>p {
@@ -76,9 +86,9 @@ ol ol ol {
     width: extend-to-zoom;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 53em) {
     #all {
-        width: 45em;
+        width: 50em;
         margin: 0 auto;
     }
 
