@@ -27,7 +27,7 @@ Now we have everything we need we can write our first failing test.  We enter th
 
 | Input | Expected Output | Actual Output | Test Result |
 | -- | -- | -- | -- |
-| 0 | 0 | =Fibonacci(A2) | =IF(B2=C2,”PASS”,”FAIL”) |
+| `0` | `0` | `=Fibonacci(A2)` | `=IF(B2=C2,"PASS","FAIL")` |
 
 Conditional formatting can be added to the Test Result column to better highlight PASS and FAIL.
 
@@ -45,8 +45,8 @@ We now add the next test:
 
 | Input | Expected Output | Actual Output | Test Result |
 | -- | -- | -- | -- |
-| 0 | 0 | =Fibonacci(A2) | =IF(B2=C2,”PASS”,”FAIL”) |
-| 1 | 1 | =Fibonacci(A3) | =IF(B3=C3,”PASS”,”FAIL”) |
+| `0` | `0` | `=Fibonacci(A2)` | `=IF(B2=C2,"PASS","FAIL")` |
+| `1` | `1` | `=Fibonacci(A3)` | `=IF(B3=C3,"PASS","FAIL")` |
 
 And update code to make it pass:
 
@@ -62,9 +62,9 @@ Repeat until no more failing tests can be added.
 
 | Input | Expected Output | Actual Output | Test Result |
 | -- | -- | -- | -- |
-| 0 | 0 | =Fibonacci(A2) | =IF(B2=C2,”PASS”,”FAIL”) |
-| 1 | 1 | =Fibonacci(A3) | =IF(B3=C3,”PASS”,”FAIL”) |
-| 2 | 1 | =Fibonacci(A4) | =IF(B4=C4,”PASS”,”FAIL”) |
+| `0` | `0` | `=Fibonacci(A2)` | `=IF(B2=C2,"PASS","FAIL")` |
+| `1` | `1` | `=Fibonacci(A3)` | `=IF(B3=C3,"PASS","FAIL")` |
+| `2` | `1` | `=Fibonacci(A4)` | `=IF(B4=C4,"PASS","FAIL")` |
 
 ```vba
 Function Fibonacci(n)
@@ -78,10 +78,10 @@ End Function
 
 | Input | Expected Output | Actual Output | Test Result |
 | -- | -- | -- | -- |
-| 0 | 0 | =Fibonacci(A2) | =IF(B2=C2,”PASS”,”FAIL”) |
-| 1 | 1 | =Fibonacci(A3) | =IF(B3=C3,”PASS”,”FAIL”) |
-| 2 | 1 | =Fibonacci(A4) | =IF(B4=C4,”PASS”,”FAIL”) |
-| 3 | 2 | =Fibonacci(A5) | =IF(B5=C5,”PASS”,”FAIL”) |
+| `0` | `0` | `=Fibonacci(A2)` | `=IF(B2=C2,"PASS","FAIL")` |
+| `1` | `1` | `=Fibonacci(A3)` | `=IF(B3=C3,"PASS","FAIL")` |
+| `2` | `1` | `=Fibonacci(A4)` | `=IF(B4=C4,"PASS","FAIL")` |
+| `3` | `2` | `=Fibonacci(A5)` | `=IF(B5=C5,"PASS","FAIL")` |
 
 ```vba
 Function Fibonacci(n)
@@ -97,11 +97,11 @@ Skipping 4, as it already passes:
 
 | Input | Expected Output | Actual Output | Test Result |
 | -- | -- | -- | -- |
-| 0 | 0 | =Fibonacci(A2) | =IF(B2=C2,”PASS”,”FAIL”) |
-| 1 | 1 | =Fibonacci(A3) | =IF(B3=C3,”PASS”,”FAIL”) |
-| 2 | 1 | =Fibonacci(A4) | =IF(B4=C4,”PASS”,”FAIL”) |
-| 3 | 2 | =Fibonacci(A5) | =IF(B5=C5,”PASS”,”FAIL”) |
-| 5 | 5 | =Fibonacci(A6) | =IF(B6=C6,”PASS”,”FAIL”) |
+| `0` | `0` | `=Fibonacci(A2)` | `=IF(B2=C2,"PASS","FAIL")` |
+| `1` | `1` | `=Fibonacci(A3)` | `=IF(B3=C3,"PASS","FAIL")` |
+| `2` | `1` | `=Fibonacci(A4)` | `=IF(B4=C4,"PASS","FAIL")` |
+| `3` | `2` | `=Fibonacci(A5)` | `=IF(B5=C5,"PASS","FAIL")` |
+| `5` | `5` | `=Fibonacci(A6)` | `=IF(B6=C6,"PASS","FAIL")` |
 
 ```vba
 Function Fibonacci(n)
