@@ -9,7 +9,7 @@ Every so often, I have contemplated the idea of TDD for Microsoft Excel VBA.  Fi
 
 ## The Fibonacci Sequence Kata
 
-As a test case, I’m using the Fibonacci Sequence kata by Jason Gorman of [Codemanship](http://codemanship.co.uk/tdd.html); as it’s one of the simplest katas out there.
+As a test case, I'm using the Fibonacci Sequence kata by Jason Gorman of [Codemanship](http://codemanship.co.uk/tdd.html); as it's one of the simplest katas out there.
 
 The task is as follows:
 
@@ -115,10 +115,10 @@ End Function
 
 ![Completed happy path worksheet table](/images/TDD-VBA-2.png)
 
-That completes the “Happy Path”.  One can continue with negative numbers and other invalid input.
+That completes the "Happy Path".  One can continue with negative numbers and other invalid input.
 
 ## Conclusions
 
-We’ve shown that it is possible to do TDD in Microsoft Excel VBA (at least for simple functions that return a value).
+We've shown that it is possible to do TDD in Microsoft Excel VBA (at least for simple functions that return a value).
 
-More complex tests might require something more from our test setup.  Perhaps writing test functions in VBA that return “PASS” or “FAIL” (and details) and calling them from cells in the worksheet.
+More complex tests might require something more from our test setup.  Perhaps writing test functions in VBA that return "PASS" or "FAIL" (and details) and calling them from cells in the worksheet.
