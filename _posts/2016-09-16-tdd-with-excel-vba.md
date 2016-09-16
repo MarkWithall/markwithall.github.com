@@ -33,7 +33,7 @@ Conditional formatting can be added to the Test Result column to better highligh
 
 Now we have our first failing test, we can add code to make the test pass in the macro editor:
 
-```vba
+```vb.net
 Function Fibonacci(n)
     Fibonacci = 0
 End Function
@@ -50,7 +50,7 @@ We now add the next test:
 
 And update code to make it pass:
 
-```vba
+```vb.net
 Function Fibonacci(n)
     Fibonacci = n
 End Function
@@ -66,7 +66,7 @@ Repeat until no more failing tests can be added.
 | `1` | `1` | `=Fibonacci(A3)` | `=IF(B3=C3,"PASS","FAIL")` |
 | `2` | `1` | `=Fibonacci(A4)` | `=IF(B4=C4,"PASS","FAIL")` |
 
-```vba
+```vb.net
 Function Fibonacci(n)
     If n < 2 Then
         Fibonacci = n
@@ -83,7 +83,7 @@ End Function
 | `2` | `1` | `=Fibonacci(A4)` | `=IF(B4=C4,"PASS","FAIL")` |
 | `3` | `2` | `=Fibonacci(A5)` | `=IF(B5=C5,"PASS","FAIL")` |
 
-```vba
+```vb.net
 Function Fibonacci(n)
     If n < 2 Then
         Fibonacci = n
@@ -103,7 +103,7 @@ Skipping 4, as it already passes:
 | `3` | `2` | `=Fibonacci(A5)` | `=IF(B5=C5,"PASS","FAIL")` |
 | `5` | `5` | `=Fibonacci(A6)` | `=IF(B6=C6,"PASS","FAIL")` |
 
-```vba
+```vb.net
 Function Fibonacci(n)
     If n < 2 Then
         Fibonacci = n
