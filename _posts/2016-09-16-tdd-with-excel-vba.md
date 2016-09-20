@@ -18,6 +18,7 @@ The task is as follows:
 ## Step-By-Step
 
 To getting going with TDD in Microsoft Excel VBA we take the following steps:
+
 * Launch Excel
 * Create new blank workbook
 * Open the Macro Editor (Alt+F11)
