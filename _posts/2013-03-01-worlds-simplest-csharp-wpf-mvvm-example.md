@@ -137,8 +137,9 @@ public class Presenter : ObservableObject
 
     private void ConvertText()
     {
+        if (string.IsNullOrWhiteSpace(SomeText)) return;
         AddToHistory(_textConverter.ConvertText(SomeText));
-        SomeText = String.Empty;
+        SomeText = string.Empty;
     }
 
     private void AddToHistory(string item)
@@ -156,6 +157,8 @@ The _SomeText_ property is the text that the user will enter.  The getter return
 The _History_ property is the list of previous converted values.  It is backed by an _ObservableCollection_, which essentially does everything for us.  Whenever we add something to it, the View is notified, so it can update.
 
 The final property is _ConvertTextCommand_.  This returns an _ICommand_ using our _DelegateCommand_ class from our framework.  This can be bound to such things as buttons and key presses in the View.  We've hooked it up to call our _ConvertText_ method when executed.  This method uses our _TextConverter_ field (which we've set up to convert text to uppercase) and then adds the converted value to the history list.  Finally, it clears the value of _SomeText_ (which will, of course, notify the View).  One last thing to note is that _History_ is going to be bound to a _ListBox_, which can do strange things when selecting an item where there are duplicates.  This is the reason for not adding duplicate strings to the history here.
+
+_[Update 2016-09-23: added handling for the case when_ SomeText _is null; which would crash the application. Thanks to [ajeebkp23](https://github.com/MarkWithall/worlds-simplest-csharp-wpf-mvvm-example/issues/1) for pointing this out.]_
 
 That's all of the coding out of the way with, now we can move on to 'drawing' the UI.
 
