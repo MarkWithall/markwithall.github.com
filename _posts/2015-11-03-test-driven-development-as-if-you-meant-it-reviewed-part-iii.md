@@ -16,7 +16,7 @@ Having done a few practice attempts at TDDAIYMI, it’s clear that the hardest p
 
 # The Starting Commits
 
-To illustrate the challenges of starting with TDDAIYMI, we are going to go through the first few of our <span style="color: red;">RED</span>-<span style="color: green;">GREEN</span>-<span style="color: blue;">REFACTOR</span> cycles step-by-step and explain in detail our thought process at each stage.  We’ve included timestamps for the commits to make it easy to see how long each step took.  These commits form part of the flamboyantly-named [`attempt_006_tddaiymi_2` branch on GitHub](https://github.com/matatk/NoughtsAndCrosses/tree/attempt_006_tddaiymi_2).
+To illustrate the challenges of starting with TDDAIYMI, we are going to go through the first few of our <span style="color: red;">RED</span>-<span style="color: green;">GREEN</span>-<span style="color: blue;">REFACTOR</span> cycles step-by-step and explain in detail our thought process at each stage.  We’ve included timestamps for the commits to make it easy to see how long each step took.  These commits form part of the flamboyantly-named [`attempt_006_tddaiymi_2` branch on GitHub](https://github.com/BillionthMonkey/NoughtsAndCrosses/tree/attempt_006_tddaiymi_2).
 
 Each commit is presented, followed by the commentary on it.
 

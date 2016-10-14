@@ -16,7 +16,7 @@ We’ve taken a detailed look, in the previous part, at how to get started with 
 
 # Communicating Classes
 
-Our first concern was how to introduce classes when this became necessary--because the tests must be made to pass within the test method, we thought this would be tricky. However we realised that, when we want to split out an inner class to clean up an existing class, this can easily be achieved in the refactoring stage. [The `ResultChecker` class was extracted](https://github.com/matatk/NoughtsAndCrosses/commit/7a8486584e5d073d84f5fe2e301a9b8fd78b75bd) from the existing code as part of the refactoring, in line with rule 4.1 of [TDDAIYMI](https://cumulative-hypotheses.org/2011/08/30/tdd-as-if-you-meant-it/):
+Our first concern was how to introduce classes when this became necessary--because the tests must be made to pass within the test method, we thought this would be tricky. However we realised that, when we want to split out an inner class to clean up an existing class, this can easily be achieved in the refactoring stage. [The `ResultChecker` class was extracted](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/7a8486584e5d073d84f5fe2e301a9b8fd78b75bd) from the existing code as part of the refactoring, in line with rule 4.1 of [TDDAIYMI](https://cumulative-hypotheses.org/2011/08/30/tdd-as-if-you-meant-it/):
 
 > You want a new class—wait until refactoring time, then… create non-test classes to provide a destination for a Move Method and for no other reason (populate implementation classes with methods by doing Move Method, and no other way)
 
@@ -98,7 +98,7 @@ index 56222aa..d6bee00 100644
  		bottom_row = set([6, 7, 8])
 ```
 
-What about when the need for a class comes up that does something different to an existing class, so can’t simply be extracted from it? On [branch "attempt_002"](https://github.com/matatk/NoughtsAndCrosses/blob/attempt_002/nac.py) we stopped because we saw no immediate way to introduce further classes that we believed were required, the reason being that we could not think of a TDDAIYMI-compliant means to introduce the communication between classes. When we know we want to adopt an MVC design, how do we use TDDAIYMI to help us wire up the Model and View, via the Controller? They have to be able to communicate.
+What about when the need for a class comes up that does something different to an existing class, so can’t simply be extracted from it? On [branch "attempt_002"](https://github.com/BillionthMonkey/NoughtsAndCrosses/blob/attempt_002/nac.py) we stopped because we saw no immediate way to introduce further classes that we believed were required, the reason being that we could not think of a TDDAIYMI-compliant means to introduce the communication between classes. When we know we want to adopt an MVC design, how do we use TDDAIYMI to help us wire up the Model and View, via the Controller? They have to be able to communicate.
 
 Fortunately the answer to this one is straightforward, too. Imagine that we have already separately developed the View and Model, and wish to write the Controller (this seems like a sufficiently bottom-up way of doing things, which we feel fits TDDAIYMI). In this case, we can write the tests for the wiring between the Model and View, making them pass within the test methods, as stipulated by the rules. It is fine for us to use the existing Model and View objects in the test methods, as they are already part of the established, tested, codebase. We will then start to be able to extract methods (as per rule 4.1).
 
@@ -111,7 +111,7 @@ Ultimately, we will arrive at a point where a lot of related methods will be rip
 
 # Rookie Mistakes
 
-One common error that we made during the exercise was to do a large refactoring in a single step. For example, in [94daea6](https://github.com/matatk/NoughtsAndCrosses/commit/94daea6de4c96c7d085893e3f5ab701d8f11b779) (below) we jumped straight to the extraction of a method for `is_legal()` without going through an intermediate step of refactoring the code to look the same in both cases. This would have left us a trivial extract-method refactoring. By doing the whole refactoring in a single step we run the risk of introducing errors, or at the very least having to go back and redo the refactoring when we get it wrong.
+One common error that we made during the exercise was to do a large refactoring in a single step. For example, in [94daea6](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/94daea6de4c96c7d085893e3f5ab701d8f11b779) (below) we jumped straight to the extraction of a method for `is_legal()` without going through an intermediate step of refactoring the code to look the same in both cases. This would have left us a trivial extract-method refactoring. By doing the whole refactoring in a single step we run the risk of introducing errors, or at the very least having to go back and redo the refactoring when we get it wrong.
 
 ```diff
 diff --git a/nac.py b/nac.py
@@ -135,7 +135,7 @@ index a588486..f24eab8 100644
 +    return move > 0
 ```
 
-The same is sometimes true when making a test pass. For example, in [29120f5](https://github.com/matatk/NoughtsAndCrosses/commit/29120f5a4ac5a8ebe732c29dbfa1813df7dc0689) (below) the test has carelessly been made to pass outside of the test itself. In this case, we should have first added the extension `and move < 9` to the `is_legal()` call and then used a refactoring to move the code into the production code.
+The same is sometimes true when making a test pass. For example, in [29120f5](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/29120f5a4ac5a8ebe732c29dbfa1813df7dc0689) (below) the test has carelessly been made to pass outside of the test itself. In this case, we should have first added the extension `and move < 9` to the `is_legal()` call and then used a refactoring to move the code into the production code.
 
 ```diff
 diff --git a/nac.py b/nac.py
@@ -150,7 +150,7 @@ index ab6cfcb..ed94fe3 100644
 +    return move >= 0 and move < 9
 ```
 
-We use the correct approach in [5612782](https://github.com/matatk/NoughtsAndCrosses/commit/561278216c74d576f9c6e672997bae9c311d77c7) later:
+We use the correct approach in [5612782](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/561278216c74d576f9c6e672997bae9c311d77c7) later:
 
 ```diff
 diff --git a/nac.py b/nac.py
@@ -172,7 +172,7 @@ index 84b3cc7..9109cfd 100644
 
 One of the most common violations of ‘the rules’ of TDD was to modify the behaviour of code during a ‘refactoring’. This most commonly took the form of moving behaviour into existing methods.
 
-For example, starting from the <span style="color: green;">GREEN</span> state ([7940ebb](https://github.com/matatk/NoughtsAndCrosses/commit/7940ebb724b878d75a2c6b84202a38991aaa5dd7), with the explicit `True`/`False` tests added for clarity):
+For example, starting from the <span style="color: green;">GREEN</span> state ([7940ebb](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/7940ebb724b878d75a2c6b84202a38991aaa5dd7), with the explicit `True`/`False` tests added for clarity):
 
 ```python
 def test_illegal_move_is_not_legal():
@@ -187,7 +187,7 @@ def is_legal(move):
     return move == 0
 ```
 
-we move directly to the following, in a single 'refactoring' ([ac29b93](https://github.com/matatk/NoughtsAndCrosses/commit/ac29b93507fe4dd1367043ffe0d7214b00be3f41), again with the explicit `True`/`False` tests added for clarity):
+we move directly to the following, in a single 'refactoring' ([ac29b93](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/ac29b93507fe4dd1367043ffe0d7214b00be3f41), again with the explicit `True`/`False` tests added for clarity):
 
 ```python
 def test_illegal_move_is_not_legal():
@@ -271,7 +271,7 @@ def is_legal(move):
 
 The result is the same as the single-step refactoring.
 
-Another instance where we were a bit aggressive in the refactoring step was in [b873939](https://github.com/matatk/NoughtsAndCrosses/commit/b873939af49e97ec69eed930013de18e818affd0) (below) where we introduced the use of sets and the `any` function (which is nice and neat, but does alter the behaviour somewhat).
+Another instance where we were a bit aggressive in the refactoring step was in [b873939](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/b873939af49e97ec69eed930013de18e818affd0) (below) where we introduced the use of sets and the `any` function (which is nice and neat, but does alter the behaviour somewhat).
 
 ```diff
 diff --git a/nac.py b/nac.py
@@ -294,7 +294,7 @@ index c0c00ce..5079bd3 100644
 
 The approach we took to determining whether a position was a win in early attempts took the form of gradually building up example cases of win/not-win conditions and adding to the code that evaluated the position to pass the tests. This often got us into a very repetitive rut with the TDD process, where not much was added to the code, but we couldn’t seem to get off that path, as can be seen below.
 
-The start of this run of commits is [63c0795](https://github.com/matatk/NoughtsAndCrosses/commit/63c0795942088d391cd39bf0d3d64c37b433eee3):
+The start of this run of commits is [63c0795](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/63c0795942088d391cd39bf0d3d64c37b433eee3):
 
 ```diff
 diff --git a/nac.py b/nac.py
@@ -315,7 +315,7 @@ index a444c5e..b0a2ddd 100644
  	def __init__(self):
 ```
 
-The end of this run of commits is [bce901b](https://github.com/matatk/NoughtsAndCrosses/commit/bce901b44f23403e722977e3decfd785833aa960):
+The end of this run of commits is [bce901b](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/bce901b44f23403e722977e3decfd785833aa960):
 
 ```diff
 diff --git a/nac.py b/nac.py
@@ -350,9 +350,9 @@ index 21c4da1..c54fa7c 100644
  		return set(self.moves_played_so_far[0::2])
 ```
 
-*You can explore the whole run of commits using the [GitHub Desktop app](https://desktop.github.com), or by visiting the page for [bce901b](https://github.com/matatk/NoughtsAndCrosses/commit/bce901b44f23403e722977e3decfd785833aa960) and following the "parent" link (it will take you backwards through the commits, but still demonstrates the repetitive and fairly content-free nature of the endeavour).*
+*You can explore the whole run of commits using the [GitHub Desktop app](https://desktop.github.com), or by visiting the page for [bce901b](https://github.com/BillionthMonkey/NoughtsAndCrosses/commit/bce901b44f23403e722977e3decfd785833aa960) and following the "parent" link (it will take you backwards through the commits, but still demonstrates the repetitive and fairly content-free nature of the endeavour).*
 
-In later attempts, for example [in our final run through](https://github.com/matatk/NoughtsAndCrosses/blob/attempt_006_tddaiymi_2/nac.py), we moved to an approach of having a list of winning conditions as data, and wrote tests to drive a solution that looked to see if the win condition was contained in the list of winning conditions.
+In later attempts, for example [in our final run through](https://github.com/BillionthMonkey/NoughtsAndCrosses/blob/attempt_006_tddaiymi_2/nac.py), we moved to an approach of having a list of winning conditions as data, and wrote tests to drive a solution that looked to see if the win condition was contained in the list of winning conditions.
 
 The later approach ends up with a much simpler and more flexible result, which would allow us to change the size of the board almost trivially. This level of flexibility could have been achieved in the algorithmic position evaluation too but would have required many more tests to get to that stage.
 
