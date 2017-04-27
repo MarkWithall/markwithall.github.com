@@ -16,7 +16,7 @@ _Updated 18th April 2014 with some comments from my colleague [@DaveCTurner](htt
 * Maintains the original context of the source branch
 * Easy to find points where merge conflict resolution failed
 
-###Cons
+### Cons
 * Can’t bisect to find cause of bugs (requires linear history)
   - Non-linear histories mean that working and non-working versions can be interleaved making it unlikely that bisect will end up at the revision that caused the bug
 * Difficult to read the history
@@ -24,7 +24,7 @@ _Updated 18th April 2014 with some comments from my colleague [@DaveCTurner](htt
 * _You can do topological bisection in a mergy history, but the chances are the first bad commit is the merge, which doesn't help you with debugging._ [@DaveCTurner](https://twitter.com/davecturner)
 
 
-##Rebase
+## Rebase
 
 ![](/images/rebase.png)
 
