@@ -171,3 +171,17 @@ When we execute the command, we can access the selected items using a short LINQ
 Items.Where(i => i.IsSelected);
 ```
 
+## Update
+
+[David Hewson](https://twitter.com/TaiShaBi) has kindly pointed out that this two-way binding workaround doesn't play nicely with virtualization of the `ListBox`.
+
+There are two options available here. Firstly, we could disable virtualization on the `ListBox`.
+
+```xml
+<ListBox VirtualizingStackPanel.IsVirtualizing="False" ... />
+```
+
+This is fine, as long as we aren't expecting the list of items to grow too large.
+
+A second, more extreme workaround is to override the 'select all' command for the `ListBox` and set the selected items via the _ViewModel_. This involves intercepting Ctrl+A and calling a command on the _ViewModel_.
+
