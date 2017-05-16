@@ -185,3 +185,18 @@ This is fine, as long as we aren't expecting the list of items to grow too large
 
 A second, more extreme workaround is to override the 'select all' command for the `ListBox` and set the selected items via the _ViewModel_. This involves intercepting Ctrl+A and calling a command on the _ViewModel_.
 
+```c#
+public ICommand SelectAllCommand => new Command(_ =>
+{
+    foreach (var item in Items)
+    {
+        item.IsSelected = true;
+    }
+});
+```
+
+```xml
+<ListBox.InputBindings>
+    <KeyBinding Gesture="Ctrl+A" Command="{Binding SelectAllCommand}" />
+</ListBox.InputBindings>
+```
