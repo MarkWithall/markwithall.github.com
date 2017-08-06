@@ -32,7 +32,7 @@ The first is a base class for ViewModel classes.  This handles the implementatio
 The simplest implementation is as follows:
 
 ```c#
-public class ObservableObject : INotifyPropertyChanged
+public abstract class ObservableObject : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
 
