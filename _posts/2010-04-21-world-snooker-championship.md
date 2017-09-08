@@ -1,6 +1,7 @@
 ---
 layout: post
 title: World Snooker Championship 2010
+description: A review of my trip the snooker.
 categories: misc
 ---
 On Monday (19th April 2010) my wife and I visited Sheffield to watch the World Snooker Championship first round match between Mark King and Steve Davis at the Crucible Theatre.
