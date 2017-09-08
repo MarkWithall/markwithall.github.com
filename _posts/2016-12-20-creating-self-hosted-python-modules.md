@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Creating Self-Hosted Python Modules
+description: A short tutorial on creating python modules and a self-hosted pip server to allow installation of them.
 categories: programming
 extra_styles: syntax.css
 ---
