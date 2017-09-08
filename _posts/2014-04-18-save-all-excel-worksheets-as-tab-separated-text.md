@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Save All Excel Worksheets As Tab Separated Text
+description: Quite often I have to save worksheets in Excel as tab-separated text or CSV.  I have managed to get it down to 8 clicks to perform this task for a single worksheet.
 categories: programming
 extra_styles: syntax.css
 ---
