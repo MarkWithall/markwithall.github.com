@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD vs Productivity
+description: Some thoughts on common misconceptions about TDD and unit testing.
 categories: programming
 ---
 Today I encountered this programmers.stackexchange post on [TDD vs Productivity](http://programmers.stackexchange.com/questions/86636/tdd-vs-productivity) and had some thoughts on common misconceptions about TDD and unit testing.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD As If You Meant It Reviewed (Part II)
+description: Part II of the series examines the problem that we will be using to try out TDDAIYMI and also the tools and technologies that we will use.
 categories: programming
 series: TDD As If You Meant It Reviewed
 ---

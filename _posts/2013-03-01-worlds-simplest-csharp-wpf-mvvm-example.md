@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The World's Simplest C# WPF MVVM Example
+description: A simple example of MVVM, where the Model knows about nothing else, the ViewModel only knows about the Model and the View only knows about the ViewModel.
 categories: programming
 extra_styles: syntax.css
 ---

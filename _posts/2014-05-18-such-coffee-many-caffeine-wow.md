@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Such Coffee, Many Caffeine, Wow!
+description: My thoughts on the recent TDD Is Dead debate.
 categories: programming
 ---
 Over the past two days I've been at [BACON 2014](http://devslovebacon.com) (it's a wonderful conference, you must go).  At the end I drank far too much coffee and enthusiastically signed up for a lightning talk.  I'll post a link to the talk here when it comes out.

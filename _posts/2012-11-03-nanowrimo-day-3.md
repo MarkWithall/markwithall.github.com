@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NaNoWriMo 2012 - Day 3
+description: The tools that I'll be using this year to write my novel.
 categories: nano
 ---
 I've finally got time to actually write a blog post.  We're already just over two days in and I'm on target so far.  I've written 4381 words at the time of writing this but I'm told there is a widget I can include on this site that will show live word counts.  I shall investigate this later.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD As If You Meant It Reviewed (Part III)
+description: Part III of the series follows the first few red-green-refactor cycles step-by-step and discusses the thought process.
 categories: programming
 series: TDD As If You Meant It Reviewed
 extra_styles: syntax.css

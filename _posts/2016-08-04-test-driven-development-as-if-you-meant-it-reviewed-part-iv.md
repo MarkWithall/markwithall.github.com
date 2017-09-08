@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD As If You Meant It Reviewed (Part IV)
+description: Part IV of the series looks at several of the more interesting moments that came about during the exercise.
 categories: programming
 series: TDD As If You Meant It Reviewed
 extra_styles: syntax.css

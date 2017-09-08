@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD MVVM Framework Test Plan
+description: Some thoughts on how one might go about developing an MVVM framework using TDD.
 categories: programming
 ---
 Just out of interest, I was experimenting with TDDing (if that’s a real phrase) a basic MVVM framework in C#.  The following is the rough sequence of tests for test-driving the implementation that I ended up using.

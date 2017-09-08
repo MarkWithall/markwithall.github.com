@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NaNo Novel Casting 2014
+description: It's that time of year again.  This year I have decided to do a Choose Your Own Adventure novel, loosely based on a certain murder mystery board game.
 categories: nano
 ---
 It's that time of year again.  This year I have decided to do a Choose Your Own Adventure novel, loosely based on a certain murder mystery board game.

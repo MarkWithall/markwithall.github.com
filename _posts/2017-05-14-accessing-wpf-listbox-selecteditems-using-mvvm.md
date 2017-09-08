@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Accessing WPF ListBox SelectedItems using MVVM
+description: A common problem that people face using the MVVM pattern is handling multiple selected items in a `ListBox` with extended selection mode turned on.
 categories: programming
 extra_styles: syntax.css
 ---

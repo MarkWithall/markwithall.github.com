@@ -1,6 +1,7 @@
 ---
 layout: post
 title: End Of NaNoWriMo 2012
+description: A wrap up of yet another successful attempt at NaNoWriMo.
 categories: nano
 javascript:
 - http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js

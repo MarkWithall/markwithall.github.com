@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD As If You Meant It Reviewed (Part I)
+description: Part I of the series looks at TDDAIYMI and the rules that must be followed.
 categories: programming
 series: TDD As If You Meant It Reviewed
 ---

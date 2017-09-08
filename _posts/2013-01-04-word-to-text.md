@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to extract text from a Microsoft Word document in C#
+description: A simple wrapper class for Word interop, that allows the extraction of the text content.
 categories: programming
 extra_styles: syntax.css
 ---

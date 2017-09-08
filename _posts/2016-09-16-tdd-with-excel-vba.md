@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD With Excel VBA
+description: Every so often, I have contemplated the idea of TDD for Microsoft Excel VBA.  Finally, I got around to trying it out.
 categories: programming
 extra_styles: syntax.css
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Simple Event Aggregator / Message Bus In C#
+description: Most, if not all, mainstream MVVM frameworks provide some sort of event aggregator/message bus. Here we look at how to create a simple one.
 categories: programming
 extra_styles: syntax.css
 ---

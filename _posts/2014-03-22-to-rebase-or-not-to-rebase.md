@@ -1,6 +1,7 @@
 ---
 layout: post
 title: To Rebase Or Not To Rebase?
+description: Some thoughts on the relative merits of rebasing a branch before merging when working with a DVCS like Mercurial or Git.
 categories: programming
 ---
 Some thoughts on the relative merits of rebasing a branch before merging when working with a DVCS like Mercurial or Git.

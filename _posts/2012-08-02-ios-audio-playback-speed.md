@@ -1,6 +1,7 @@
 ---
 layout: post
 title: iOS Audio Playback - What Does 2x Mean?
+description: Do the speed multipliers in various iOS apps actually change the speed as they say?
 categories: misc
 ---
 For quite some time it has bugged me that selecting 2x in the Music app on iOS doesn't play back the selected audio in half the time.  I have, therefore, taken the time to measure the playback time in my two most used apps: Apple Podcasts and Audible.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MVVM - Creating New Windows
+description: An example of how to allow the creation of new windows using the MVVM pattern without the ViewModel needing to know about the View.
 categories: programming
 extra_styles: syntax.css
 ---

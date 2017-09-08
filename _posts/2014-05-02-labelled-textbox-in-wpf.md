@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Labelled TextBox In WPF
+description: How to have a series of nicely aligned labelled textboxes in WPF/XAML.
 categories: programming
 extra_styles: syntax.css
 ---

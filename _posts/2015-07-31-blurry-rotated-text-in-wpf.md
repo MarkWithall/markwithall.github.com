@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blurry Rotated Text In WPF
+description: Sometimes when you transform text in WPF it ends up rendering blurred at runtime. Here's one way to fix it.
 categories: programming
 extra_styles: syntax.css
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Single Responsibility Principle
+description: The Single Responsibility Principle is seemingly the simplest of the SOLID principles, But what does it actually mean in practice?
 categories: programming
 extra_styles: syntax.css
 ---

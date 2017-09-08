@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blogging (hopefully) 2015
+description: A review of blogging in 2014 and a look forward to what will hopefully come.
 categories: programming
 ---
 A somewhat late first article this year; as it’s just turned March.  To continue the trend from last year, I’m starting with a review and forecast.  Last year: seven out of twelve.  Not as good as the nine out of twelve for 2013 but not a complete disaster.  As usual, however, nearly all of the articles were written in the first half of the year.  This year, I’m still keeping the twelve article target and will try harder to get more in the second half.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction To NaNoWriMo 2013
+description: A discussion of some of my ideas for this year's NaNoWriMo novel.
 categories: nano
 ---
 This November I will be doing [NaNoWriMo](http://nanowrimo.org/en/participants/scroog1/) for the fifth time.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Create an Outlook 2010 Search Folder using VBA
+description: Microsoft Outlook 2010 (and most likely other versions too) isn't very good at anything beyond very, very simple searches. Here's how to get around that problem.
 categories: programming
 extra_styles: syntax.css
 ---

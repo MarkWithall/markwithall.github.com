@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Thoughts On Test Driven Development
+description: A discussion on how to do TDD 'properly' and why it's hard to be disciplined about following the approach.
 categories: programming
 extra_styles: syntax.css
 ---
