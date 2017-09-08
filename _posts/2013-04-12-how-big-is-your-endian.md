@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How Big Is Your Endian?
+description: I have finally discovered some of the advantages and disadvantages of the two main endian-nesses for data representation.
 categories: programming
 ---
 I have finally discovered some of the advantages and disadvantages of the two main endian-nesses for data representation.  This isn’t something I’ve really thought about before but it’s actually quite interesting when you find out.
