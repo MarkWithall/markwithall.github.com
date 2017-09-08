@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 3D Movie Rant
+description: My thoughts on the use of 3D in modern cinema.
 categories: misc
 ---
 I've recently seen two of the new wave of 3D movies sweeping across the globe (Avatar and Alice in Wonderland).  These movies have received great praise.  However, I'd like to take some time out to step back and take an 'objective' look at the 3D element of these movies.
