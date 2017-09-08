@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DDD North 2014 Review
+description: My review of the talks I went to at DDD North 2014 in Leeds.
 categories: programming
 ---
 It's been a while but yesterday has presented me with the motivation to write another post.  It's also getting close to the end of the year and I'm running rather short of my target of twelve articles.
