@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Speed Reader Bookmarklet
+description: A bookmarklet that allows you to read the selected text from a website by flashing words rapidly, one at a time.
 categories: programming
 ---
 The other day on [TWiT](http://twit.tv/) I heard about an iPad app called [Read Quick](http://readquickapp.com/).  I thought that this sounded like a brilliant idea and wouldn't it be great if one could just select some text in a webpage, press a button and have the same thing happen.
