@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fluent APIs And The Law Of Demeter
+description: The Law of Demeter is often described as only allow one dot per line of code. This seems at odds with the use of fluent APIs. Can the two work together?
 categories: programming
 extra_styles: syntax.css
 ---
