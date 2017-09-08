@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NaNoWriMo 2012 - Day 11
+description: Some thoughts on the possible rules of time travel and what laws could govern them.
 categories: nano
 ---
 Have reached 20,001 words so far.  About two days ahead of target.
