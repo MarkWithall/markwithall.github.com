@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to partition a list in C#
+description: What's the shortest code that we can write to partition a list into fixed-size sublists in C#?
 categories: programming
 extra_styles: syntax.css
 ---
