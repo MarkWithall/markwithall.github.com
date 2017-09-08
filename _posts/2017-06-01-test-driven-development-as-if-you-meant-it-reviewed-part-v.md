@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD As If You Meant It Reviewed (Part V)
+description: Part V of the series looks at how the creation of naughts and crosses might be achieved using a more traditional approach to TDD.
 categories: programming
 series: TDD As If You Meant It Reviewed
 extra_styles: syntax.css
