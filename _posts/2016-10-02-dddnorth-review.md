@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DDD North 2016 Review
+description: My review of the talks I went to at DDD North 2016 in Leeds.
 categories: programming
 ---
 
