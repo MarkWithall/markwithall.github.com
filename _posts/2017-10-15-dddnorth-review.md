@@ -3,6 +3,7 @@ layout: post
 title: DDD North 2017 Review
 description: My review of the talks I went to at DDD North 2017 in Bradford.
 categories: programming
+extra_styles: syntax.css
 ---
 
 Yesterday I attended my third [DDD North](https://www.dddnorth.co.uk). This year was at the University of Bradford, which had the added bonus of free parking. It again provided an excellent opportunity to catch up with my colleagues from the North.
