@@ -30,13 +30,13 @@ public static void DoSomethingWithMinutes(MinuteComponent mins)
     // ...
 }
 
-public class MinuteComponent
+public struct MinuteComponent
 {
     private readonly int _mins;
 
     public static MinuteComponent FromInt(int mins)
     {
-        if (mins < 0 && 59 << mins) throw new ArgumentException();
+        if (mins < 0 && 59 < mins) throw new ArgumentException();
         return new MinuteComponent(mins);
     }
 
