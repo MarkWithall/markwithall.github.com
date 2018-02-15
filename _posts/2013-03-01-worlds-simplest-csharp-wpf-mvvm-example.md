@@ -211,15 +211,17 @@ Our final piece of UI description is the main window.
         SizeToContent="WidthAndHeight">
     
     <Window.DataContext>
-        <ViewModel:Presenter/>
+        <local:Presenter/>
     </Window.DataContext>
     
-    <View:ConverterControl/>
+    <local:ConverterControl/>
     
 </Window>
 ```
 
 This has two points of interest.  Firstly, we are specifying that the context for the Window is an instance of the _Presenter_ class in our ViewModel (which will be created for us when the window is created).  Secondly, we are specifying that the UI is made up of a _ConverterControl_ that we defined above, which will inherit that data context.
+
+_[Update 2018-02-15: note that the namespace 'local' assumes that both `Presenter` and `ConverterControl` are in the same namespace as `MainWindow`. Add additional namespaces as required for your own structure. Thanks to [yanniqq](https://github.com/MarkWithall/worlds-simplest-csharp-wpf-mvvm-example/issues/5) for highlighting the issue.]_
 
 And that is basically it.  All together around 35 real lines of C# code and about 18 lines of XAML.
 
