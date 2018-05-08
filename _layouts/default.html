@@ -4,7 +4,7 @@
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ page.title }}</title>
-        <link rel="alternate" type="application/rss+xml" title="markwithall.com Feed" href="http://markwithall.com/atom.xml" />
+        <link rel="alternate" type="application/rss+xml" title="markwithall.com Feed" href="https://markwithall.com/atom.xml" />
         <meta name="description" content="My personal webpage and blog about software engineering, writing, music, films, reading, travel and whatever else I get up to"/>
         <meta name="keywords" content="programming,writing,NaNoWriMo,music,blog"/>
         <meta name="author" content="Dr Mark Withall BSc (hons) PhD"/>
@@ -13,14 +13,14 @@
         <meta name="twitter:site" content="@MarkWithall"/>
         <meta name="twitter:creator" content="@MarkWithall"/>
         <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Mark Withall{% endif %} "/>
-        {% if page.url %}<meta name="twitter:url" content="http://www.markwithall.com{{ page.url }}"/> {% endif %}
+        {% if page.url %}<meta name="twitter:url" content="https://www.markwithall.com{{ page.url }}"/> {% endif %}
         <meta name="twitter:description" content="{% if page.description %} {{ page.description }}{% else %}Mark Withall{% endif %}"/>
-        <meta name="twitter:image:src" content="{% if page.image %}http://www.markwithall.com{{ page.image }}{% else %}http://www.gravatar.com/avatar/6a25f5528a714a4df8d81b177ad2f8f5{% endif %}"/>
+        <meta name="twitter:image:src" content="{% if page.image %}https://www.markwithall.com{{ page.image }}{% else %}https://www.gravatar.com/avatar/6a25f5528a714a4df8d81b177ad2f8f5{% endif %}"/>
         
         <link rel="author" href="https://plus.google.com/+MarkWithall/?rel=author" />
         <style type="text/css">
-            <!-- @import 'http://fonts.googleapis.com/css?family=Medula+One'; -->
-            <!-- @import 'http://fonts.googleapis.com/css?family=ABeeZee'; -->
+            <!-- @import 'https://fonts.googleapis.com/css?family=Medula+One'; -->
+            <!-- @import 'https://fonts.googleapis.com/css?family=ABeeZee'; -->
             <!-- @import '/css/default.css'; -->
 {% for css in page.extra_styles %}
             <!-- @import '/css/{{css}}'; -->
@@ -41,8 +41,8 @@
             <div id="links">
             <p>Return to the <a href="/">main page</a></p>
             <p><a href="/me.html">Other me on the Internet</a></p>
-            <p><a href="http://markwithall.com/atom.xml"><img src="/images/feed.png" alt="RSS Feed"/></a></p>
-            <p><a href="http://nanowrimo.org/participants/scroog1/novels/asteroids-816860/stats"><img src="http://www.nanowrimo.org/widget/LiveSupporter/scroog1.png" alt="NaNoWriMo"/></a></p>
+            <p><a href="https://markwithall.com/atom.xml"><img src="/images/feed.png" alt="RSS Feed"/></a></p>
+            <p><a href="https://nanowrimo.org/participants/scroog1/novels/asteroids-816860/stats"><img src="https://www.nanowrimo.org/widget/LiveSupporter/scroog1.png" alt="NaNoWriMo"/></a></p>
             </div>
             <div id="footer">
                 <p>Copyright &copy; Mark Withall 2017.  All rights reserved.</p>
@@ -53,7 +53,7 @@
 
                     (function() {
                         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
                         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
                     })();
                 </script>
