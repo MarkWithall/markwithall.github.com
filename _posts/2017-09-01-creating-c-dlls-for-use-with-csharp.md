@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating C DLLs for use with C#
-description: Creating a DLL in C and then accessing it from C# has always seemed like a aunting task. I decided to give it a go and found it to be surprisingly straightforward.
+description: Creating a DLL in C and then accessing it from C# has always seemed like a daunting task. I decided to give it a go and found it to be surprisingly straightforward.
 categories: programming
 extra_styles: syntax.css
 ---
