@@ -1,5 +1,5 @@
 body {
-    background: url(/images/background.jpg) no-repeat top center fixed; 
+    background: url(/images/background.jpg) no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,9 +19,9 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
     filter: alpha(opacity=85);
     -moz-opacity: 0.85;
-    -khtml-opacity: 0.85; 
+    -khtml-opacity: 0.85;
 }
- 
+
 #date {
     color: blue;
 }
@@ -82,7 +82,7 @@ ol ol ol {
 
 @media (min-width: 53em) {
     #all {
-        width: 50em;
+        max-width: 50em;
         margin: 0 auto;
     }
 
