@@ -28,7 +28,7 @@ With those goals in mind, the application we are going to write will allow the u
 
 The first thing that we are going to do is to create a minimal MVVM framework for us to use in the rest of the application.  There are two important components of the framework.
 
-The first is a base class for ViewModel classes.  This handles the implementation of the _INotifyPropertyChanged_ interface.  This interface allows update messages to be passed to the View.  It should also be noted that all ViewModel classes that are bound to by the View should implement this (even if the values don't change from the ViewModel) as there is a known memory leak that may occur if they don't (see [the Microsoft support article](http://support.microsoft.com/kb/938416/en-us)).
+The first is a base class for ViewModel classes.  This handles the implementation of the _INotifyPropertyChanged_ interface.  This interface allows update messages to be passed to the View.  It should also be noted that all ViewModel classes that are bound to by the View should implement this (even if the values don't change from the ViewModel) as there is a known memory leak that may occur if they don't (see [the Microsoft support article](https://web.archive.org/web/20080514012450/http://support.microsoft.com/kb/938416)).
 
 The simplest implementation is as follows:
 
